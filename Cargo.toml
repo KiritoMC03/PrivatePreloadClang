@@ -1,0 +1,12 @@
+[package]
+name = "clang-preload"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Sample library in rust"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+clang-sys = { version = "1.8.1", features = ["runtime"] }
